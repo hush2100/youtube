@@ -12,7 +12,6 @@ const Port = lazy(() => import("./pages/Port"));
 const Youtube = lazy(() => import("./pages/Youtube"));
 const Channel= lazy(() => import("./pages/Channel"));
 const Video = lazy(() => import("./pages/Video"));
-const Search = lazy(() => import("./pages/Search"));
 const Not = lazy(() => import("./pages/Not"));
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
           <Route path="/youtube" element={<Youtube />} />
           <Route path="/channel/:channelId" element={<Channel />} />
           <Route path="/video/:videoId" element={<Video />} />
-          <Route path="/search/:searchId" element={<Search />} />
           <Route path="*" element={<Not />} />
         </Routes>
       </Suspense>
