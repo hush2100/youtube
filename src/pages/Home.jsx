@@ -21,6 +21,7 @@ const Home = () => {
       <Gsap />
       <Portfolio />
       <Youtube />
+      
     </Main>
   );
 }
