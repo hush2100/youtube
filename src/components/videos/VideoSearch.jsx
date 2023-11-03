@@ -8,7 +8,7 @@ const VideoSearch = ({videos}) => {
     <div className="video" key={index}>
       <div className="video__thumb play__icon">
         <Link 
-        to={`/video/{video.id.videoId}`}
+        to={`/video/${video.id.videoId}`}
         style={{ backgroundImage: `url(${video.snippet.thumbnail.high.url})`}}
         >
         </Link>
@@ -18,7 +18,7 @@ const VideoSearch = ({videos}) => {
           <Link to={`/video/${video.id.videoId}`}>{video.snippet.title}</Link>
         </div>
         <div className="info">
-          <span className="author">
+        <span className="author">
             <Link to={`/channel/${video.snippet.channelId}`}>{video.snippet.channelTitle}</Link>
           </span>
         </div>

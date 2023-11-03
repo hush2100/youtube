@@ -23,9 +23,10 @@ const Search = () => {
       setNextPageToken(data.nextPageToken);
       setVideos((preVideos) => [...preVideos, ...data.items]);
       setLoading(false);
+      console.log(query, pageToken);
     })
     .catch((error) => {
-      console.log('Errorfetching data', error);
+      console.log('Error fetching data', error);
       setLoading(false);
     })
   }
