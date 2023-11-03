@@ -1,10 +1,10 @@
 import React from "react";
 
-const Logo = () => {
+const Logo = ({toggleMenu}) => {
   return (
     <h1 className="header__logo">
       <a href="/">
-        <em aria-hidden="true"></em>
+        <em aria-hidden="true" onClick={toggleMenu}></em>
         <span>webs<br />youtube</span>
       </a>
     </h1>

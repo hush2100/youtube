@@ -26,6 +26,7 @@ const Search = () => {
     })
     .catch((error) => {
       console.log('Errorfetching data', error);
+      setLoading(false);
     })
   }
   const handleLoadMore = () => {
